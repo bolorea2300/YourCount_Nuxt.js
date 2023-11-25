@@ -2,7 +2,7 @@
   <b-navbar>
     <template #brand>
       <b-navbar-item class="site-title" tag="nuxt-link" :to="{ path: '/' }">
-        YOURCOUNT
+        YourCount
       </b-navbar-item>
     </template>
     <template #start>
