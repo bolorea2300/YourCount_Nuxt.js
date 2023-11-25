@@ -43,10 +43,10 @@ export default {
 
   proxy: {
     '/sanctum/csrf-cookie': {
-      target: 'http://localhost:8000',
+      target: 'https://api.yourcount.net',
     },
     '/api/': {
-      target: 'http://localhost:8000',
+      target: 'https://api.yourcount.net',
     },
   },
 
@@ -57,7 +57,7 @@ export default {
     strategies: {
       local: {
         provider: 'laravel/sanctum',
-        url: 'http://localhost:8000',
+        url: 'https://api.yourcount.net',
         endpoints: {
           login: { url: '/api/login', method: 'post' },
           logout: { url: '/api/logout', method: 'post' },
